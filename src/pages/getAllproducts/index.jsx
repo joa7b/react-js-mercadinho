@@ -1,9 +1,10 @@
+import CardProduct from '../../components/CardProduct/CardProduct';
 
 import './style.css';
 
 const AllProducts = () => {
     return(
-        <h1>Hello world</h1>
+        <CardProduct />
     );
 }
 

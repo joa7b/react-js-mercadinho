@@ -1,0 +1,57 @@
+.divCardContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.5rem;
+    min-height: 210px;
+    gap: 2rem;
+}
+
+.divCardContainer figure img {
+    width: 200px;
+}
+
+.cardCountContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.divCount {
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+}
+
+.divCount p {
+    width: 50px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.divCount p:hover {
+    cursor: pointer;
+}
+
+.more {
+    background-color: green;
+}
+
+.less {
+    background-color: red;
+}
+
+.cardPrice {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.divCardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+

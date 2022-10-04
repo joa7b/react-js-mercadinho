@@ -9,6 +9,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header />
     <AllProducts />
+    <AllProducts />
+    <AllProducts />
+    <AllProducts />
+    <AllProducts />
+    <AllProducts />
+    <AllProducts />
+    <AllProducts />
+    <AllProducts />
     <Footer />
   </React.StrictMode>
 )
