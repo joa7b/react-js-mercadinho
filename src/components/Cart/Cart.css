@@ -1,0 +1,12 @@
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    justify-content: space-between;
+}
+
+.cartChild {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}

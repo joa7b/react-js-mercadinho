@@ -1,0 +1,27 @@
+
+.cartPageContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    padding: .8rem;
+    border: none;
+    background-color: rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(145, 145, 145);
+}
+
+.cartPageChild {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

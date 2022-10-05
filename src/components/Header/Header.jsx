@@ -30,10 +30,12 @@ const Header = () => {
         </div>
       </div>
       <div className="divHeaderCard">
-        <figure>
-          <img src="https://svgshare.com/i/n9M.svg" alt="" />
-          <span>Carrinho</span>
-        </figure>
+        <Link to='/carrinho'>
+          <figure>
+            <img src="https://svgshare.com/i/n9M.svg" alt="" />
+            <span>Carrinho</span>
+          </figure>
+        </Link>
       </div>
     </header>
   );
