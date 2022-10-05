@@ -54,3 +54,8 @@ figure {
     border-radius: 2px;
     padding: 2px;
 }
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}

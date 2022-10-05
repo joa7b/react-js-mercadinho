@@ -5,6 +5,7 @@ import "./style.css";
 
 const AllProducts = () => {
   const [listProducts, setListProducts] = useState([]);
+
   const findAllProducts = async () => {
     const data = await fetch("http://localhost:3000/allproducts");
     const response = await data.json();

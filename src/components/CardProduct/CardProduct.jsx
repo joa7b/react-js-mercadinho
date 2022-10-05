@@ -5,7 +5,7 @@ const CardProduct = ({ name, price, description, image, measure, id }) => {
   const [count, setCount] = useState(0);
 
   const handleCart = () => {
-    return console.log("handleCart");
+    localStorage.setItem(id,count);
   };
 
   return (

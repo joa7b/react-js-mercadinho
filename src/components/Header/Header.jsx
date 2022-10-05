@@ -6,16 +6,26 @@ const Header = () => {
   return (
     <header>
       <div className="headerLogoandInput">
-        <figure>
-          <img src="https://svgshare.com/i/nAG.svg" alt="" />
-          <h1>Blue Minimercado</h1>
-        </figure>
+        <Link to="/">
+          <figure>
+            <img src="https://svgshare.com/i/nAG.svg" alt="" />
+            <h1>Blue Minimercado</h1>
+          </figure>
+        </Link>
         <div className="divHeaderInput">
           <ul>
-            <Link to='/produtos/frutas'><li>Frutas</li></Link>
-            <Link to='/produtos/mercearia'><li>Mercearia</li></Link>
-            <Link to='/produtos/carnes'><li>Carnes</li></Link>
-            <Link to='/produtos/limpeza'><li>Limpeza</li></Link>
+            <Link to="/produtos/frutas">
+              <li>Frutas</li>
+            </Link>
+            <Link to="/produtos/mercearia">
+              <li>Mercearia</li>
+            </Link>
+            <Link to="/produtos/carnes">
+              <li>Carnes</li>
+            </Link>
+            <Link to="/produtos/limpeza">
+              <li>Limpeza</li>
+            </Link>
           </ul>
         </div>
       </div>
