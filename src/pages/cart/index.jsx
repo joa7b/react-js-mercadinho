@@ -10,7 +10,6 @@ const CartPage = () => {
     const data = await fetch("http://localhost:3000/allproducts");
     const response = await data.json();
 
-
     setProducts(response);
   };
 

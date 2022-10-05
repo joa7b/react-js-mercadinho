@@ -1,28 +1,38 @@
-import React, {useState, useEffect} from 'react'
-import CardProduct from '../../components/CardProduct/CardProduct';
+import React, { useState, useEffect } from "react";
+import CardProduct from "../../components/CardProduct/CardProduct";
 
-import './style.css';
+import "./style.css";
 
 const Grocery = () => {
-    const [listFruits, setListFruits] = useState([])
+  const [listFruits, setListFruits] = useState([]);
 
-    const findFruits = async () => {
-        const data = await fetch('http://localhost:3000/grocery');
-        const response = await data.json();
-        setListFruits(response);
-    }
+  const findFruits = async () => {
+    const data = await fetch("http://localhost:3000/grocery");
+    const response = await data.json();
+    setListFruits(response);
+  };
 
-    useEffect(() => {
-        findFruits()
-    }, [])
+  useEffect(() => {
+    findFruits();
+  }, []);
 
-    return(
-        <section>
-            {listFruits.map((e) => {
-                return <CardProduct name={e.name} price={e.price} description={e.description} image={e.image} measure={e.measure} id={e.id} key={e.id} />
-            })}
-        </section>
-    );
-}
+  return (
+    <section>
+      {listFruits.map((e) => {
+        return (
+          <CardProduct
+            name={e.name}
+            price={e.price}
+            description={e.description}
+            image={e.image}
+            measure={e.measure}
+            id={e.id}
+            key={e.id}
+          />
+        );
+      })}
+    </section>
+  );
+};
 
 export default Grocery;

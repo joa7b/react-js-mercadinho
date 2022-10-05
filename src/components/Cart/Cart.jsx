@@ -1,6 +1,6 @@
 import "./Cart.css";
 
-const Cart = ({id, name, price}) => {
+const Cart = ({ id, name, price }) => {
   return (
     <div className="cartContainer">
       <div className="cartChild">

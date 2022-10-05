@@ -21,25 +21,25 @@ const AllProducts = () => {
     e.preventDefault();
 
     const newProduct = {
-      "name": name,
-      "description": description,
-      "price": price,
-      "measure": measure,
-      "image": image
-    }
+      name: name,
+      description: description,
+      price: price,
+      measure: measure,
+      image: image,
+    };
 
     const init = {
       method: "POST",
       headers: {
-        "Content-Type": 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(newProduct)
-    }
+      body: JSON.stringify(newProduct),
+    };
 
-    const dataPost = await fetch('http://localhost:3000/allproducts', init);
-    const responsePost = await dataPost.json()
+    const dataPost = await fetch("http://localhost:3000/allproducts", init);
+    const responsePost = await dataPost.json();
 
-    console.log(responsePost)
+    console.log(responsePost);
   };
 
   useEffect(() => {

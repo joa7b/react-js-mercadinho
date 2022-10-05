@@ -30,7 +30,7 @@ const Header = () => {
         </div>
       </div>
       <div className="divHeaderCard">
-        <Link to='/carrinho'>
+        <Link to="/carrinho">
           <figure>
             <img src="https://svgshare.com/i/n9M.svg" alt="" />
             <span>Carrinho</span>
