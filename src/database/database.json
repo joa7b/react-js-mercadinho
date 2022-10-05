@@ -5,7 +5,7 @@
             "name": "Maça",
             "description": "A maçã é o pseudofruto pomáceo da macieira, árvore da família Rosaceae. É um dos pseudofrutos de árvore mais cultivados, e o mais conhecido dos muitos membros do género Malus que são usados ​​pelos seres humanos.",
             "price": 6.50,
-            "image": "",
+            "image": "https://images2.imgbox.com/e7/19/osUoDOWt_o.jpg",
             "measure": "kg"
         },
         {
@@ -13,7 +13,7 @@
             "name": "Banana",
             "description": "Banana, pacoba ou pacova é uma pseudobaga da bananeira, uma planta herbácea vivaz acaule da família Musaceae. São cultivadas em 130 países. Originárias do sudeste da Ásia são atualmente cultivadas em praticamente todas as regiões tropicais do planeta.",
             "price": 5.43,
-            "image": "",
+            "image": "https://images2.imgbox.com/a3/ac/I7Wrg2pR_o.jpg",
             "measure": "kg"
         },
         {
@@ -21,7 +21,7 @@
             "name": "Pera",
             "description": "A pera é o fruto comestível da pereira, uma árvore do gênero Pyrus L., pertencente à família Rosaceae, e que conta com vinte variedades de espécies cultivadas em todo o mundo. A fruta pode ser consumida in natura, enlatada, em suco e desidratada.",
             "price": 8.25,
-            "image": "",
+            "image": "https://images2.imgbox.com/9f/67/2K5YsSxr_o.jpg",
             "measure": "kg"
         },
         {
@@ -29,7 +29,7 @@
             "name": "Morango",
             "description": "Morango é considerado, na linguagem vulgar, como o fruto vermelho do morangueiro, da família das rosáceas. No entanto, em termos científicos não se pode considerar um fruto já que é constituído pelo receptáculo da flor original, em volta do qual se dispõem os frutos.",
             "price": 10.63,
-            "image": "",
+            "image": "https://images2.imgbox.com/db/df/UdVijB1r_o.jpg",
             "measure": "kg"
         },
         {
@@ -37,7 +37,7 @@
             "name": "Mamão",
             "description": "Carica papaya é uma espécie de fruteira tropical que produz os frutos conhecidos pelos nomes comerciais de papaia ou ababaia, ou mamão.",
             "price": 5.55,
-            "image": "",
+            "image": "https://images2.imgbox.com/7f/2c/0hWK7HJU_o.jpg",
             "measure": "kg"
         },
         {
@@ -45,7 +45,7 @@
             "name": "Leite de vaca",
             "description": "Leite é uma secreção nutritiva de cor esbranquiçada e opaca produzida pelas glândulas mamárias das fêmeas dos mamíferos. O líquido é produzido pelas células secretoras das glândulas mamárias ou mamas. A secreção láctea de uma fêmea dias antes e depois do parto se chama colostro.",
             "price": 4.20,
-            "image": "",
+            "image": "https://images2.imgbox.com/2b/cb/dW4pnzIv_o.jpg",
             "measure": "un"
         },
         {
@@ -53,7 +53,7 @@
             "name": "Biscoito",
             "description": "Biscoito é um produto de doçaria confeccionado à base de farinha, açúcar e um emulsionante, que pode ser leite ou uma gordura.",
             "price": 5,
-            "image": "",
+            "image": "https://images2.imgbox.com/52/c2/3xdKnOZy_o.jpg",
             "measure": "pc"
         },
         {
@@ -61,7 +61,7 @@
             "name": "Chocolate",
             "description": "O chocolate é um alimento feito com base na amêndoa fermentada e torrada do cacau. Sua origem remonta às civilizações pré-colombianas da América Central.",
             "price": 7,
-            "image": "",
+            "image": "https://images2.imgbox.com/8e/a5/wKalFK68_o.jpg",
             "measure": "un"
         },
         {
@@ -69,7 +69,7 @@
             "name": "Arroz",
             "description": "O arroz é uma planta da família das gramíneas que alimenta mais da metade da população humana do mundo. É a terceira maior cultura cerealífera do mundo, apenas ultrapassada pelas de milho e trigo. É rico em hidratos de carbono.",
             "price": 23,
-            "image": "",
+            "image": "https://images2.imgbox.com/8d/29/1w2kVDU4_o.png",
             "measure": "un"
         },
         {
@@ -77,7 +77,7 @@
             "name": "Feijão",
             "description": "Feijão é um nome comum para uma grande variedade de sementes de plantas de alguns gêneros da família Fabaceae.",
             "price": 18,
-            "image": "",
+            "image": "https://images2.imgbox.com/29/04/a20rsTwp_o.png",
             "measure": "un"
         },
         {

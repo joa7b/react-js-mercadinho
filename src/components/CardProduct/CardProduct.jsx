@@ -12,7 +12,7 @@ const CardProduct = ({ name, price, description, image, measure, id }) => {
     <>
       <div className="divCardContainer">
         <figure>
-          <img src="https://via.placeholder.com/200" alt="" />
+          <img src={image} alt="" />
           <span></span>
         </figure>
         <div className="divCardInfo">
@@ -39,7 +39,7 @@ const CardProduct = ({ name, price, description, image, measure, id }) => {
             </p>
           </div>
           <figure onClick={handleCart}>
-            <img src="../../../images/card2.svg" alt="" />
+            <img src="https://svgshare.com/i/n9M.svg" alt="" />
           </figure>
         </div>
       </div>
