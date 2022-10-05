@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Header.css";
 
 const Header = () => {
@@ -9,7 +11,12 @@ const Header = () => {
           <h1>Blue Minimercado</h1>
         </figure>
         <div className="divHeaderInput">
-          <input type="text" placeholder="Pesquise o item" />
+          <ul>
+            <Link to='/produtos/frutas'><li>Frutas</li></Link>
+            <Link to='/produtos/mercearia'><li>Mercearia</li></Link>
+            <Link to='/produtos/carnes'><li>Carnes</li></Link>
+            <Link to='/produtos/limpeza'><li>Limpeza</li></Link>
+          </ul>
         </div>
       </div>
       <div className="divHeaderCard">

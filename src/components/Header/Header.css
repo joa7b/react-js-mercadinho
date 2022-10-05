@@ -15,6 +15,16 @@ header {
     gap: 1rem;
 }
 
+.divHeaderInput ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.divHeaderInput ul a {
+    text-decoration: none;
+    color: aliceblue;
+}
 
 figure img {
     width: 5rem;
