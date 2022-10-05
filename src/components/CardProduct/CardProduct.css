@@ -11,6 +11,10 @@
     width: 200px;
 }
 
+h2 {
+    color: black;
+}
+
 .cardCountContainer {
     display: flex;
     flex-direction: column;

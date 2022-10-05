@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./CardProduct.css";
 
 const CardProduct = ({ name, price, description, image, measure, id }) => {
   const [count, setCount] = useState(0);
 
   const handleCart = () => {
-    localStorage.setItem(id,count);
+    localStorage.setItem(id, count);
   };
 
   return (
@@ -16,7 +18,9 @@ const CardProduct = ({ name, price, description, image, measure, id }) => {
           <span></span>
         </figure>
         <div className="divCardInfo">
-          <h2>{name}</h2>
+          <Link to={"/produto?id=" + id}>
+            <h2>{name}</h2>
+          </Link>
           <p>{description}</p>
           <p className="cardPrice">R${price + measure}</p>
         </div>
