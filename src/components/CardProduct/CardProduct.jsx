@@ -1,30 +1,51 @@
+import React, { useState } from "react";
+import "./CardProduct.css";
 
-import './CardProduct.css';
+const CardProduct = ({ name, price, description, image, measure, id }) => {
+  const [count, setCount] = useState(0);
 
-const CardProduct = () => {
-    return(
-        <>
-        <div className='divCardContainer'>
-            <figure>
-                <img src="https://via.placeholder.com/200" alt="" />
-                <span></span>
-            </figure>
-            <div className='divCardInfo'>
-                <h2>Product</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim magni provident sunt modi necessitatibus id at, velit debitis laboriosam harum ullam animi facere odit in vero architecto cupiditate fuga temporibus.</p>
-                <p className='cardPrice'>R$3,50</p>
-            </div>
-            <div className='cardCountContainer'>
-                <p>1</p>
-                <div className='divCount'>
-                    <p className='more'>+</p>
-                    <p className='less'>-</p>
-                </div>
-            </div>
+  const handleCart = () => {
+    return console.log("handleCart");
+  };
+
+  return (
+    <>
+      <div className="divCardContainer">
+        <figure>
+          <img src="https://via.placeholder.com/200" alt="" />
+          <span></span>
+        </figure>
+        <div className="divCardInfo">
+          <h2>{name}</h2>
+          <p>{description}</p>
+          <p className="cardPrice">R${price + measure}</p>
         </div>
-        <hr />
-        </>
-    );
-}
+        <div className="cardCountContainer">
+          <p>{count}</p>
+          <div className="divCount">
+            <p
+              className="more"
+              value={count}
+              onClick={() => setCount(count + 1)}
+            >
+              +
+            </p>
+            <p
+              className="less"
+              value={count}
+              onClick={() => setCount(count - 1)}
+            >
+              -
+            </p>
+          </div>
+          <figure onClick={handleCart}>
+            <img src="../../../images/card2.svg" alt="" />
+          </figure>
+        </div>
+      </div>
+      <hr />
+    </>
+  );
+};
 
 export default CardProduct;

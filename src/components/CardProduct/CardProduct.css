@@ -19,6 +19,19 @@
     gap: 10px;
 }
 
+.cardCountContainer figure img{
+    width: 50px;
+}
+
+.cardCountContainer figure {
+    background-color: rgb(25, 98, 255);
+    width: 100%;
+}
+
+.cardCountContainer figure:hover {
+    cursor: pointer;
+}
+
 .divCount {
     display: flex;
     color: aliceblue;

@@ -1,0 +1,164 @@
+{
+    "allproducts": [
+        {
+            "id": 1,
+            "name": "Maça",
+            "description": "A maçã é o pseudofruto pomáceo da macieira, árvore da família Rosaceae. É um dos pseudofrutos de árvore mais cultivados, e o mais conhecido dos muitos membros do género Malus que são usados ​​pelos seres humanos.",
+            "price": 6.50,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 2,
+            "name": "Banana",
+            "description": "Banana, pacoba ou pacova é uma pseudobaga da bananeira, uma planta herbácea vivaz acaule da família Musaceae. São cultivadas em 130 países. Originárias do sudeste da Ásia são atualmente cultivadas em praticamente todas as regiões tropicais do planeta.",
+            "price": 5.43,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 3,
+            "name": "Pera",
+            "description": "A pera é o fruto comestível da pereira, uma árvore do gênero Pyrus L., pertencente à família Rosaceae, e que conta com vinte variedades de espécies cultivadas em todo o mundo. A fruta pode ser consumida in natura, enlatada, em suco e desidratada.",
+            "price": 8.25,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 4,
+            "name": "Morango",
+            "description": "Morango é considerado, na linguagem vulgar, como o fruto vermelho do morangueiro, da família das rosáceas. No entanto, em termos científicos não se pode considerar um fruto já que é constituído pelo receptáculo da flor original, em volta do qual se dispõem os frutos.",
+            "price": 10.63,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 5,
+            "name": "Mamão",
+            "description": "Carica papaya é uma espécie de fruteira tropical que produz os frutos conhecidos pelos nomes comerciais de papaia ou ababaia, ou mamão.",
+            "price": 5.55,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 6,
+            "name": "Leite de vaca",
+            "description": "Leite é uma secreção nutritiva de cor esbranquiçada e opaca produzida pelas glândulas mamárias das fêmeas dos mamíferos. O líquido é produzido pelas células secretoras das glândulas mamárias ou mamas. A secreção láctea de uma fêmea dias antes e depois do parto se chama colostro.",
+            "price": 4.20,
+            "image": "",
+            "measure": "un"
+        },
+        {
+            "id": 7,
+            "name": "Biscoito",
+            "description": "Biscoito é um produto de doçaria confeccionado à base de farinha, açúcar e um emulsionante, que pode ser leite ou uma gordura.",
+            "price": 5,
+            "image": "",
+            "measure": "pc"
+        },
+        {
+            "id": 8,
+            "name": "Chocolate",
+            "description": "O chocolate é um alimento feito com base na amêndoa fermentada e torrada do cacau. Sua origem remonta às civilizações pré-colombianas da América Central.",
+            "price": 7,
+            "image": "",
+            "measure": "un"
+        },
+        {
+            "id": 9,
+            "name": "Arroz",
+            "description": "O arroz é uma planta da família das gramíneas que alimenta mais da metade da população humana do mundo. É a terceira maior cultura cerealífera do mundo, apenas ultrapassada pelas de milho e trigo. É rico em hidratos de carbono.",
+            "price": 23,
+            "image": "",
+            "measure": "un"
+        },
+        {
+            "id": 10,
+            "name": "Feijão",
+            "description": "Feijão é um nome comum para uma grande variedade de sementes de plantas de alguns gêneros da família Fabaceae.",
+            "price": 18,
+            "image": "",
+            "measure": "un"
+        },
+        {
+            "id": 11,
+            "name": "Picanha",
+            "description": "A Picanha é um tipo de corte de carne bovina tipicamente brasileira. A origem do nome Picanha advém do tratamento talhante Italiano, nomeadamente do corte Picatta.",
+            "price": 60,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 12,
+            "name": "Filé Mignon",
+            "description": "O filé mignon é um tipo de corte de carne bovina. É a parte mais tenra da ponta do filé. É localizada na parte traseira do animal e representa, aproximadamente, 2,95% da carcaça. É o corte mais macio da carne bovina e quase não contém gordura.",
+            "price": 85,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 13,
+            "name": "Contrafilé",
+            "description": "O Contrafilé é o mais longo corte da carne bovina, podendo conter também a Capa do contra filé. É localizada na parte traseira do animal e representa, aproximadamente, 13,43% da carcaça.",
+            "price": 51,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 14,
+            "name": "Alcatra",
+            "description": "A alcatra é um tipo de corte da carne bovina. É localizada na parte traseira do animal entre o lombo e a coxa e representa, aproximadamente, 8,84% da carcaça. É um corte considerado magro, nobre e versátil.",
+            "price": 49,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 15,
+            "name": "Linguiça",
+            "description": "A linguiça é um enchido em forma de salsicha, feito de carne de porco, de aves, de carneiro, de carne de bovinos e mesmo peixes ou frutos do mar, temperado com cebola, alho e páprica e outras especiarias.",
+            "price": 19,
+            "image": "",
+            "measure": "kg"
+        },
+        {
+            "id": 16,
+            "name": "Detergente",
+            "description": "O detergente é utilizado na limpeza, pois consegue interagir tanto com substâncias polares (água), quanto com as apolares (sujeira).",
+            "price": 2,
+            "image": "",
+            "measure": "un"
+        },
+        {
+            "id": 17,
+            "name": "Sabonete",
+            "description": "Ele limpa, ajuda a remover a oleosidade excessiva, os resíduos de poluição e a maquiagem e todos os tipos de pele podem usá-lo.",
+            "price": 3,
+            "image": "",
+            "measure": "un"
+        },
+        {
+            "id": 18,
+            "name": "Shampoo",
+            "description": "O shampoo serve para remover a sujeira do cabelo e do couro cabeludo. O produto também prepara o fio para receber algum tratamento, como condicionador e máscara capilar.",
+            "price": 10,
+            "image": "",
+            "measure": "un"
+        },
+        {
+            "id": 19,
+            "name": "Água Sanitária",
+            "description": "Água sanitária limpa, desinfeta, e ainda é um eficiente alvejante para roupas brancas. Justamente por isso dá para contar com o produto em praticamente todas as tarefas domésticas.",
+            "price": 17,
+            "image": "",
+            "measure": "un"
+        },
+        {
+            "id": 20,
+            "name": "Desinfetante",
+            "description": "Produto que mata todos os microrganismos patogênicos em objetos e superfícies inanimadas, mas não necessariamente todas as formas microbianas esporuladas.",
+            "price": 15,
+            "image": "",
+            "measure": "un"
+        }
+    ]
+}
