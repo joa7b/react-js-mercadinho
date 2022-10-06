@@ -1,12 +1,12 @@
 import "./Cart.css";
 
-const Cart = ({ id, name, price }) => {
+const Cart = ({ id, name, subtotal}) => {
   return (
     <div className="cartContainer">
       <div className="cartChild">
         <p>{id}</p>
         <p>{name}</p>
-        <p>R${price}</p>
+        <p>R${subtotal}</p>
       </div>
     </div>
   );

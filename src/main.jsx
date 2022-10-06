@@ -7,6 +7,7 @@ import Meat from "./pages/meat/index";
 import Cleaning from "./pages/cleaning/index";
 import GetByIdProduct from "./pages/getByIdProduct";
 import Cart from "./pages/cart/index";
+import Login from './pages/login/index';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <Header />
     <Routes>
+      <Route path="/login" element={<Login />} />
       <Route path="/carrinho" element={<Cart />} />
       <Route path="/produto" element={<GetByIdProduct />} />
       <Route path="/produtos/limpeza" element={<Cleaning />} />

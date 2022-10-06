@@ -5,17 +5,38 @@ import "./style.css";
 
 const CartPage = () => {
   const [products, setProducts] = useState([]);
+  const [listIdQuantity, setListIdQuantity] = useState([]);
 
   const findAllProducts = async () => {
-    const data = await fetch("http://localhost:3000/allproducts");
+    console.log('function')
+    const data = await fetch(`http://localhost:3000/allproducts`);
     const response = await data.json();
+    const listIdLocalStorage = []
 
-    setProducts(response);
+    for(let i = 1; i <= response.length; i++) {
+      if(localStorage.getItem(i)) {
+        listIdLocalStorage.push({id: i, quantity: localStorage.getItem(i)})
+      }
+    }
+
+    setListIdQuantity(listIdLocalStorage);
+
+    const listCart = [];
+
+    for(let n of listIdLocalStorage) {
+      const dataById = await fetch(`http://localhost:3000/allproducts/${n.id}`);
+      const responseById = await dataById.json();
+      listCart.push(responseById)
+    }
+
+    setProducts(listCart)
   };
 
   useEffect(() => {
-    findAllProducts;
+    findAllProducts()
   }, []);
+
+
   return (
     <section className="cartPageContainer">
       <h2>Carrinho</h2>
@@ -25,7 +46,16 @@ const CartPage = () => {
           <p>Nome</p>
           <p>Sub-total</p>
         </div>
-        <Cart />
+        {products.map((e) => {
+          let subtotal = 0;
+          for(let o of listIdQuantity) {
+            if(o.id == e.id) {
+              subtotal = o.quantity * e.price
+            }
+          }
+          return <Cart key={e.id} id={e.id} name={e.name} subtotal={subtotal}/>
+        })}
+        <p>Total: R$1000,00</p>
         <button>Finalizar Compra</button>
       </div>
     </section>

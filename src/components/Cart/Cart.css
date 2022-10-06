@@ -1,7 +1,7 @@
 .cartContainer {
     display: flex;
     flex-direction: column;
-    width: 25rem;
+    width: 35rem;
     justify-content: space-between;
 }
 
