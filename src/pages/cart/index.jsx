@@ -36,6 +36,11 @@ const CartPage = () => {
     findAllProducts()
   }, []);
 
+  const handleClick = () => {
+    localStorage.clear()
+    document.location.reload(true);
+  }
+
 
   return (
     <section className="cartPageContainer">
@@ -56,7 +61,10 @@ const CartPage = () => {
           return <Cart key={e.id} id={e.id} name={e.name} subtotal={subtotal}/>
         })}
         <p>Total: R$1000,00</p>
+        <div className="buttonContainer">
         <button>Finalizar Compra</button>
+        <button onClick={handleClick}>Limpar Carrinho</button>
+        </div>
       </div>
     </section>
   );
