@@ -8,14 +8,14 @@ const CartPage = () => {
   const [listIdQuantity, setListIdQuantity] = useState([]);
 
   const findAllProducts = async () => {
-    console.log('function')
+    console.log("function");
     const data = await fetch(`http://localhost:3000/allproducts`);
     const response = await data.json();
-    const listIdLocalStorage = []
+    const listIdLocalStorage = [];
 
-    for(let i = 1; i <= response.length; i++) {
-      if(localStorage.getItem(i)) {
-        listIdLocalStorage.push({id: i, quantity: localStorage.getItem(i)})
+    for (let i = 1; i <= response.length; i++) {
+      if (localStorage.getItem(i)) {
+        listIdLocalStorage.push({ id: i, quantity: localStorage.getItem(i) });
       }
     }
 
@@ -23,24 +23,24 @@ const CartPage = () => {
 
     const listCart = [];
 
-    for(let n of listIdLocalStorage) {
+    for (let n of listIdLocalStorage) {
       const dataById = await fetch(`http://localhost:3000/allproducts/${n.id}`);
       const responseById = await dataById.json();
-      listCart.push(responseById)
+      listCart.push(responseById);
     }
 
-    setProducts(listCart)
+    setProducts(listCart);
   };
+  
 
   useEffect(() => {
-    findAllProducts()
+    findAllProducts();
   }, []);
 
   const handleClick = () => {
-    localStorage.clear()
+    localStorage.clear();
     document.location.reload(true);
-  }
-
+  };
 
   return (
     <section className="cartPageContainer">
@@ -53,17 +53,18 @@ const CartPage = () => {
         </div>
         {products.map((e) => {
           let subtotal = 0;
-          for(let o of listIdQuantity) {
-            if(o.id == e.id) {
-              subtotal = o.quantity * e.price
+          for (let o of listIdQuantity) {
+            if (o.id == e.id) {
+              subtotal = o.quantity * e.price;
             }
           }
-          return <Cart key={e.id} id={e.id} name={e.name} subtotal={subtotal}/>
+          return (
+            <Cart key={e.id} id={e.id} name={e.name} subtotal={subtotal} />
+          );
         })}
-        <p>Total: R$1000,00</p>
         <div className="buttonContainer">
-        <button>Finalizar Compra</button>
-        <button onClick={handleClick}>Limpar Carrinho</button>
+          <button>Finalizar Compra</button>
+          <button onClick={handleClick}>Limpar Carrinho</button>
         </div>
       </div>
     </section>

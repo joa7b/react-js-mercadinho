@@ -6,7 +6,7 @@ const Cart = ({ id, name, subtotal}) => {
       <div className="cartChild">
         <p>{id}</p>
         <p>{name}</p>
-        <p>R${subtotal}</p>
+        <p id="priceTotal">R${subtotal}</p>
       </div>
     </div>
   );

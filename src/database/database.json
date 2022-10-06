@@ -159,22 +159,6 @@
       "price": 15,
       "image": "https://images2.imgbox.com/4c/5f/52k7puHw_o.jpg",
       "measure": "un"
-    },
-    {
-      "name": "thunder client",
-      "description": "teste thunder client ",
-      "price": 0,
-      "measure": "kg",
-      "image": "image",
-      "id": 21
-    },
-    {
-      "name": "teste",
-      "description": "teste description",
-      "price": "2",
-      "measure": "kg",
-      "image": "imagem",
-      "id": 22
     }
   ],
   "fruits": [
