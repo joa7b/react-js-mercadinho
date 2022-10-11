@@ -31,7 +31,6 @@ const CartPage = () => {
 
     setProducts(listCart);
   };
-  
 
   useEffect(() => {
     findAllProducts();
@@ -52,6 +51,7 @@ const CartPage = () => {
           <p>Sub-total</p>
         </div>
         {products.map((e) => {
+          console.log(e);
           let subtotal = 0;
           for (let o of listIdQuantity) {
             if (o.id == e.id) {

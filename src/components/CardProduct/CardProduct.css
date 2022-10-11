@@ -1,74 +1,73 @@
 .divCardContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    font-size: 1.5rem;
-    min-height: 210px;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.5rem;
+  min-height: 210px;
+  gap: 2rem;
 }
 
 .divCardContainer figure img {
-    width: 200px;
+  width: 200px;
 }
 
 h2 {
-    color: black;
+  color: black;
 }
 
 .cardCountContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.cardCountContainer figure img{
-    width: 50px;
+.cardCountContainer figure img {
+  width: 50px;
 }
 
 .cardCountContainer figure {
-    background-color: rgb(25, 98, 255);
-    width: 100%;
+  background-color: rgb(25, 98, 255);
+  width: 100%;
 }
 
 .cardCountContainer figure:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .divCount {
-    display: flex;
-    color: aliceblue;
-    align-items: center;
+  display: flex;
+  color: aliceblue;
+  align-items: center;
 }
 
 .divCount p {
-    width: 50px;
-    text-align: center;
-    font-size: 2rem;
+  width: 50px;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .divCount p:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .more {
-    background-color: green;
+  background-color: green;
 }
 
 .less {
-    background-color: red;
+  background-color: red;
 }
 
 .cardPrice {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .divCardInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-

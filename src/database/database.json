@@ -159,6 +159,14 @@
       "price": 15,
       "image": "https://images2.imgbox.com/4c/5f/52k7puHw_o.jpg",
       "measure": "un"
+    },
+    {
+      "name": "Sabão",
+      "description": "Sabão descrição",
+      "price": "5",
+      "measure": "un",
+      "image": "imagem",
+      "id": 21
     }
   ],
   "fruits": [

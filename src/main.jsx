@@ -7,7 +7,7 @@ import Meat from "./pages/meat/index";
 import Cleaning from "./pages/cleaning/index";
 import GetByIdProduct from "./pages/getByIdProduct";
 import Cart from "./pages/cart/index";
-import Login from './pages/login/index';
+import Login from "./pages/login/index";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

@@ -1,61 +1,61 @@
 header {
-    background-color: rgb(255, 31, 31);
-    width: 100%;
-    padding: 2rem;
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: rgb(255, 31, 31);
+  width: 100%;
+  padding: 2rem;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .headerLogoandInput {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .divHeaderInput ul {
-    display: flex;
-    list-style: none;
-    gap: 15px;
+  display: flex;
+  list-style: none;
+  gap: 15px;
 }
 
 .divHeaderInput ul a {
-    text-decoration: none;
-    color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 figure img {
-    width: 5rem;
+  width: 5rem;
 }
 
 figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .divHeaderName {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .divHeaderInput {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .divHeaderInput input {
-    border: none;
-    width: 20rem;
-    height: 4rem;
-    border-radius: 2px;
-    padding: 2px;
+  border: none;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 2px;
+  padding: 2px;
 }
 
 a {
-    text-decoration: none;
-    color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
