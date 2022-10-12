@@ -8,6 +8,14 @@ const CardProduct = ({ name, price, description, image, measure, id }) => {
 
   const handleCart = () => {
     localStorage.setItem(id, count);
+    setCount(0)
+  };
+
+  const lessCount = () => {
+    setCount(count - 1);
+    if (count <= 0) {
+      setCount(0);
+    }
   };
 
   return (
@@ -34,11 +42,7 @@ const CardProduct = ({ name, price, description, image, measure, id }) => {
             >
               +
             </p>
-            <p
-              className="less"
-              value={count}
-              onClick={() => setCount(count - 1)}
-            >
+            <p className="less" value={count} onClick={lessCount}>
               -
             </p>
           </div>
