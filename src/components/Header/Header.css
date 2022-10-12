@@ -27,7 +27,7 @@ header {
 }
 
 figure img {
-  width: 5rem;
+  width: 7rem;
 }
 
 figure {
@@ -58,4 +58,19 @@ figure {
 a {
   text-decoration: none;
   color: aliceblue;
+}
+
+.divHeaderCard {
+  display: flex;
+}
+
+.headerProfilePic {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.divLoginCart figure {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }

@@ -8,7 +8,7 @@ const Header = () => {
       <div className="headerLogoandInput">
         <Link to="/">
           <figure>
-            <img src="https://svgshare.com/i/nAG.svg" alt="" />
+            <img src="https://freesvg.org/img/cart3.png" alt="" />
             <h1>Blue Minimercado</h1>
           </figure>
         </Link>
@@ -30,9 +30,15 @@ const Header = () => {
         </div>
       </div>
       <div className="divHeaderCard">
+        <div className="divLoginCart">
+          <figure>
+            <img src="https://via.placeholder.com/100" alt="" className="headerProfilePic"/>
+            <span>Admin</span>
+          </figure>
+        </div>
         <Link to="/carrinho">
           <figure>
-            <img src="https://svgshare.com/i/n9M.svg" alt="" />
+            <img src="https://freesvg.org/img/mb-cart-64x64.png" alt="" />
             <span>Carrinho</span>
           </figure>
         </Link>

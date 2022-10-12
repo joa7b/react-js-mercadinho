@@ -43,7 +43,7 @@ const CardProduct = ({ name, price, description, image, measure, id }) => {
             </p>
           </div>
           <figure onClick={handleCart}>
-            <img src="https://svgshare.com/i/n9M.svg" alt="" />
+            <img src="https://freesvg.org/img/mb-cart-64x64.png" alt="" />
           </figure>
         </div>
       </div>
