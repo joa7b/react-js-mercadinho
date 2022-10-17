@@ -13,22 +13,26 @@ const CartPage = () => {
     const response = await data.json();
     const listIdLocalStorage = [];
 
-    for (let i = 1; i <= response.length; i++) {
-      if (localStorage.getItem(i)) {
-        listIdLocalStorage.push({ id: i, quantity: localStorage.getItem(i) });
+    for(let n of response) {
+      if(localStorage.getItem(n._id)) {
+        listIdLocalStorage.push({id: n._id, quantity: localStorage.getItem(n._id)})
       }
     }
 
-    setListIdQuantity(listIdLocalStorage);
+    /*for (let i = 1; i <= response.length; i++) {
+      if (localStorage.getItem(i)) {
+        listIdLocalStorage.push({ id: i, quantity: localStorage.getItem(i) });
+      }
+    }*/
+    setListIdQuantity(listIdLocalStorage)
 
     const listCart = [];
 
     for (let n of listIdLocalStorage) {
       const dataById = await fetch(`https://mercadinho.herokuapp.com/produtos/${n.id}`);
       const responseById = await dataById.json();
-      listCart.push(responseById);
+      listCart.push(responseById[0]);
     }
-
     setProducts(listCart);
   };
 
@@ -51,15 +55,14 @@ const CartPage = () => {
           <p>Sub-total</p>
         </div>
         {products.map((e) => {
-          console.log(e);
           let subtotal = 0;
           for (let o of listIdQuantity) {
-            if (o.id == e.id) {
+            if (o.id == e._id) {
               subtotal = o.quantity * e.price;
             }
           }
           return (
-            <Cart key={e.id} id={e.id} name={e.name} subtotal={subtotal} />
+            <Cart key={e._id} id={e._id} name={e.name} subtotal={subtotal} />
           );
         })}
         <div className="buttonContainer">

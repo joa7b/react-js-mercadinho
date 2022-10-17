@@ -18,8 +18,6 @@ const AllProducts = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
     const newProduct = {
       name: name,
       description: description,
@@ -36,12 +34,14 @@ const AllProducts = () => {
       body: JSON.stringify(newProduct),
     };
 
-    const dataPost = await fetch("https://mercadinho.herokuapp.com/produtos", init);
+    const dataPost = await fetch(
+      "https://mercadinho.herokuapp.com/produtos/create",
+      init
+    );
     const responsePost = await dataPost.json();
 
     console.log(responsePost);
   };
-
 
   useEffect(() => {
     findAllProducts();
