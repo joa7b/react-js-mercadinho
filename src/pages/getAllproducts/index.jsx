@@ -12,7 +12,7 @@ const AllProducts = () => {
   const [image, setImage] = useState("");
 
   const findAllProducts = async () => {
-    const data = await fetch("http://localhost:3000/allproducts");
+    const data = await fetch("https://mercadinho.herokuapp.com/produtos");
     const response = await data.json();
     setListProducts(response);
   };
@@ -36,11 +36,12 @@ const AllProducts = () => {
       body: JSON.stringify(newProduct),
     };
 
-    const dataPost = await fetch("http://localhost:3000/allproducts", init);
+    const dataPost = await fetch("https://mercadinho.herokuapp.com/produtos", init);
     const responsePost = await dataPost.json();
 
     console.log(responsePost);
   };
+
 
   useEffect(() => {
     findAllProducts();
@@ -51,8 +52,8 @@ const AllProducts = () => {
       {listProducts.map((e) => {
         return (
           <CardProduct
-            key={e.id}
-            id={e.id}
+            key={e._id}
+            id={e._id}
             name={e.name}
             price={e.price}
             description={e.description}

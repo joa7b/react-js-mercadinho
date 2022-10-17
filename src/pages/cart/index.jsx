@@ -9,7 +9,7 @@ const CartPage = () => {
 
   const findAllProducts = async () => {
     console.log("function");
-    const data = await fetch(`http://localhost:3000/allproducts`);
+    const data = await fetch(`https://mercadinho.herokuapp.com/produtos`);
     const response = await data.json();
     const listIdLocalStorage = [];
 
@@ -24,7 +24,7 @@ const CartPage = () => {
     const listCart = [];
 
     for (let n of listIdLocalStorage) {
-      const dataById = await fetch(`http://localhost:3000/allproducts/${n.id}`);
+      const dataById = await fetch(`https://mercadinho.herokuapp.com/produtos/${n.id}`);
       const responseById = await dataById.json();
       listCart.push(responseById);
     }
