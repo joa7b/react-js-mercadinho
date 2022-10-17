@@ -42,7 +42,6 @@ const CartPage = () => {
 
   const handleClick = () => {
     localStorage.clear();
-    document.location.reload(true);
   };
 
   return (
