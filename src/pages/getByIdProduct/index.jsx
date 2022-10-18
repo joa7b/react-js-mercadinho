@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from "react";
+import productsApi from "../../api/produtos.api";
 
 import "./style.css";
 
 const getByIdProduct = () => {
-  const [product, setProduct] = useState('');
+  const [product, setProduct] = useState("");
   const [count, setCount] = useState(0);
 
   const findById = async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const getId = urlParams.get("id");
-    const data = await fetch(`https://mercadinho.herokuapp.com/produtos/${getId}`);
-    const response = await data.json();
-    setProduct(response[0]);
+    const productsById = await productsApi.getByIdProducts(getId);
+    setProduct(productsById[0]);
   };
-
 
   useEffect(() => {
     findById();

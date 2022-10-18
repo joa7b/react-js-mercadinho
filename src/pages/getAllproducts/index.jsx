@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CardProduct from "../../components/CardProduct/CardProduct";
+import productsApi from '../../api/produtos.api';
 
 import "./style.css";
 
@@ -12,12 +13,13 @@ const AllProducts = () => {
   const [image, setImage] = useState("");
 
   const findAllProducts = async () => {
-    const data = await fetch("https://mercadinho.herokuapp.com/produtos");
-    const response = await data.json();
-    setListProducts(response);
-  };
+    const AllProductsList = await productsApi.getAllProducts();
+    setListProducts(AllProductsList)
+  }
 
   const handleSubmit = async (e) => {
+    e.preventDefault()
+
     const newProduct = {
       name: name,
       description: description,
@@ -34,13 +36,8 @@ const AllProducts = () => {
       body: JSON.stringify(newProduct),
     };
 
-    const dataPost = await fetch(
-      "https://mercadinho.herokuapp.com/produtos/create",
-      init
-    );
-    const responsePost = await dataPost.json();
-
-    console.log(responsePost);
+    const productCreated = await productsApi.createProduct(init);
+    console.log(productCreated);
   };
 
   useEffect(() => {
