@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Cart from "../../components/Cart/Cart";
+import productsApi from "../../api/produtos.api";
 
 import "./style.css";
 
@@ -8,30 +9,25 @@ const CartPage = () => {
   const [listIdQuantity, setListIdQuantity] = useState([]);
 
   const findAllProducts = async () => {
-    console.log("function");
-    const data = await fetch(`https://mercadinho.herokuapp.com/produtos`);
-    const response = await data.json();
+    const allProductsList = await productsApi.getAllProducts();
     const listIdLocalStorage = [];
 
-    for(let n of response) {
-      if(localStorage.getItem(n._id)) {
-        listIdLocalStorage.push({id: n._id, quantity: localStorage.getItem(n._id)})
+    for (let n of allProductsList) {
+      if (localStorage.getItem(n._id)) {
+        listIdLocalStorage.push({
+          id: n._id,
+          quantity: localStorage.getItem(n._id),
+        });
       }
     }
 
-    /*for (let i = 1; i <= response.length; i++) {
-      if (localStorage.getItem(i)) {
-        listIdLocalStorage.push({ id: i, quantity: localStorage.getItem(i) });
-      }
-    }*/
-    setListIdQuantity(listIdLocalStorage)
+    setListIdQuantity(listIdLocalStorage);
 
     const listCart = [];
 
     for (let n of listIdLocalStorage) {
-      const dataById = await fetch(`https://mercadinho.herokuapp.com/produtos/${n.id}`);
-      const responseById = await dataById.json();
-      listCart.push(responseById[0]);
+      const byIdProductsList = await productsApi.getByIdProducts(n.id);
+      listCart.push(byIdProductsList[0]);
     }
     setProducts(listCart);
   };

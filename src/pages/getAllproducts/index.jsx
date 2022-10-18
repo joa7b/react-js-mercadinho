@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CardProduct from "../../components/CardProduct/CardProduct";
-import productsApi from '../../api/produtos.api';
+import productsApi from "../../api/produtos.api";
 
 import "./style.css";
 
@@ -14,11 +14,11 @@ const AllProducts = () => {
 
   const findAllProducts = async () => {
     const AllProductsList = await productsApi.getAllProducts();
-    setListProducts(AllProductsList)
-  }
+    setListProducts(AllProductsList);
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     const newProduct = {
       name: name,

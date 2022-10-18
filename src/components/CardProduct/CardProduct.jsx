@@ -8,7 +8,7 @@ const CardProduct = ({ name, price, description, image, measure, id }) => {
 
   const handleCart = () => {
     localStorage.setItem(id, count);
-    setCount(0)
+    setCount(0);
   };
 
   const lessCount = () => {

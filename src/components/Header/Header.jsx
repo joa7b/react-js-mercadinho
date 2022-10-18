@@ -32,7 +32,11 @@ const Header = () => {
       <div className="divHeaderCard">
         <div className="divLoginCart">
           <figure>
-            <img src="https://via.placeholder.com/100" alt="" className="headerProfilePic"/>
+            <img
+              src="https://via.placeholder.com/100"
+              alt=""
+              className="headerProfilePic"
+            />
             <span>Admin</span>
           </figure>
         </div>
