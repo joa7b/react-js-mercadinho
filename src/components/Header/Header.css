@@ -75,3 +75,10 @@ a {
   flex-direction: column;
   gap: 13px;
 }
+
+@media (max-width: 820px) {
+  header {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

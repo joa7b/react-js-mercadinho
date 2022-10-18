@@ -14,6 +14,18 @@ const getByIdProduct = () => {
     setProduct(productsById[0]);
   };
 
+  const handleCart = () => {
+    localStorage.setItem(product._id, count);
+    setCount(0);
+  };
+
+  const lessCount = () => {
+    setCount(count - 1);
+    if (count <= 0) {
+      setCount(0);
+    }
+  };
+
   useEffect(() => {
     findById();
   }, []);
@@ -35,11 +47,11 @@ const getByIdProduct = () => {
               <span id="plus" onClick={() => setCount(count + 1)}>
                 +
               </span>
-              <span id="less" onClick={() => setCount(count - 1)}>
+              <span id="less" onClick={lessCount}>
                 -
               </span>
             </div>
-            <span className="cartContainerId">
+            <span className="cartContainerId" onClick={handleCart}>
               <img src="https://svgshare.com/i/n9M.svg" alt="cart" />
             </span>
           </div>
