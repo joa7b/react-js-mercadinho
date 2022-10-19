@@ -38,7 +38,7 @@ const CartPage = () => {
 
   const handleClick = () => {
     localStorage.clear();
-    window.location.reload(false);
+    window.location.reload(true);
   };
 
   return (
