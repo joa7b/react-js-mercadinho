@@ -1,7 +1,10 @@
+
+const baseURL = 'https://mercadinho.herokuapp.com'
+
 const productsApi = {
   getAllProducts: async () => {
     try {
-      const Alldata = await fetch("https://mercadinho.herokuapp.com/produtos");
+      const Alldata = await fetch(`${baseURL}/produtos`);
       const Allresponse = await Alldata.json();
       return Allresponse;
     } catch (err) {
@@ -12,7 +15,7 @@ const productsApi = {
   getByIdProducts: async (id) => {
     try {
       const dataById = await fetch(
-        `https://mercadinho.herokuapp.com/produtos/${id}`
+        `${baseURL}/produtos/${id}`
       );
       const responseById = await dataById.json();
       return responseById;
@@ -24,7 +27,7 @@ const productsApi = {
   createProduct: async (product) => {
     try {
       const dataPost = await fetch(
-        "https://mercadinho.herokuapp.com/produtos/create",
+        `${baseURL}/produtos/create`,
         product
       );
       const responsePost = await dataPost.json();
