@@ -6,7 +6,7 @@ import "./style.css";
 
 const AllProducts = () => {
   const [listProducts, setListProducts] = useState([]);
- const [product, setProduct] = useState({});
+  const [product, setProduct] = useState({});
 
   const findAllProducts = async () => {
     const AllProductsList = await productsApi.getAllProducts();
@@ -15,9 +15,6 @@ const AllProducts = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    console.log(product)
-
 
     const newProduct = {
       name: product.name,
@@ -66,35 +63,39 @@ const AllProducts = () => {
             placeholder="Insira o nome"
             value={product.name}
             id="name"
-            onChange={(e) => setProduct({...product, name: e.target.value})}
+            onChange={(e) => setProduct({ ...product, name: e.target.value })}
           />
           <input
             type="text"
             placeholder="Insira a descrição"
             value={product.description}
             id="description"
-            onChange={(e) => setProduct({...product, description: e.target.value})}
+            onChange={(e) =>
+              setProduct({ ...product, description: e.target.value })
+            }
           />
           <input
             type="text"
             placeholder="Insira o preço"
             value={product.price}
             id="price"
-            onChange={(e) => setProduct({...product, price: e.target.value})}
+            onChange={(e) => setProduct({ ...product, price: e.target.value })}
           />
           <input
             type="text"
             placeholder="Insira a medida"
             value={product.measure}
             id="measure"
-            onChange={(e) => setProduct({...product, measure: e.target.value})}
+            onChange={(e) =>
+              setProduct({ ...product, measure: e.target.value })
+            }
           />
           <input
             type="text"
             placeholder="Insira a imagem"
             value={product.image}
             id="image"
-            onChange={(e) => setProduct({...product, image: e.target.value})}
+            onChange={(e) => setProduct({ ...product, image: e.target.value })}
           />
           <button type="submit">Criar produto</button>
         </form>
