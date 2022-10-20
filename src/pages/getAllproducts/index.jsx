@@ -6,11 +6,7 @@ import "./style.css";
 
 const AllProducts = () => {
   const [listProducts, setListProducts] = useState([]);
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-  const [price, setPrice] = useState(0);
-  const [measure, setMeasure] = useState("");
-  const [image, setImage] = useState("");
+ const [product, setProduct] = useState({});
 
   const findAllProducts = async () => {
     const AllProductsList = await productsApi.getAllProducts();
@@ -20,12 +16,15 @@ const AllProducts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log(product)
+
+
     const newProduct = {
-      name: name,
-      description: description,
-      price: price,
-      measure: measure,
-      image: image,
+      name: product.name,
+      description: product.description,
+      price: product.price,
+      measure: product.measure,
+      image: product.image,
     };
 
     const init = {
@@ -65,37 +64,37 @@ const AllProducts = () => {
           <input
             type="text"
             placeholder="Insira o nome"
-            value={name}
+            value={product.name}
             id="name"
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setProduct({...product, name: e.target.value})}
           />
           <input
             type="text"
             placeholder="Insira a descrição"
-            value={description}
+            value={product.description}
             id="description"
-            onChange={(e) => setDescription(e.target.value)}
+            onChange={(e) => setProduct({...product, description: e.target.value})}
           />
           <input
             type="text"
             placeholder="Insira o preço"
-            value={price}
+            value={product.price}
             id="price"
-            onChange={(e) => setPrice(e.target.value)}
+            onChange={(e) => setProduct({...product, price: e.target.value})}
           />
           <input
             type="text"
             placeholder="Insira a medida"
-            value={measure}
+            value={product.measure}
             id="measure"
-            onChange={(e) => setMeasure(e.target.value)}
+            onChange={(e) => setProduct({...product, measure: e.target.value})}
           />
           <input
             type="text"
             placeholder="Insira a imagem"
-            value={image}
+            value={product.image}
             id="image"
-            onChange={(e) => setImage(e.target.value)}
+            onChange={(e) => setProduct({...product, image: e.target.value})}
           />
           <button type="submit">Criar produto</button>
         </form>
